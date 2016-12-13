@@ -1,3 +1,5 @@
+// 快速了解结构
+
 module.exports = (grunt) => {
     // Grunt任务配置
     grunt.initConfig();
