@@ -9,7 +9,7 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    pag: grunt.files.readJSON('package.json'),
+    pkg: grunt.files.readJSON('package.json'),
 
     // JavaScript代码检查
     jshint: {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         // 将要被合并的文件
         src: ['src/**/*.js'],
         // 合并后的JS文件的存放位置
-        dest: 'dist/<%= pag.name %>.js'
+        dest: 'dist/<%= pkg.name %>.js'
       }
     },
 
